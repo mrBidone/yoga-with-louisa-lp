@@ -7,65 +7,94 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <img src="" alt="Louisas Photo" />
-      <h1>Louisa Ershova</h1>
-      <p>@louisa_ershova</p>
-      <p>
-        Откройте для себя гармонию йоги, позволяя каждому вдоху наполнять вас
-        энергией, а выдоху освобождать от напряжения.
-      </p>
+    <header class="page-header">
+      <div class="container">
+        <img
+          class="hero-img"
+          src="./img/louisa.webp"
+          width="352"
+          alt="Louisas Photo"
+        />
+        <h1 class="main-title">Louisa Ershova</h1>
+        <a class="main-subtitle">@louisa_ershova</a>
+        <p class="main-descr">
+          Откройте для себя гармонию йоги, позволяя каждому вдоху наполнять вас
+          энергией, а выдоху освобождать от напряжения.
+        </p>
+      </div>
     </header>
     <main>
-      <section>
-        <h2 class="visually-hidden">Список ссылок</h2>
-        <ul>
-          <li><a href="">Йога для беременных</a></li>
-          <li><a href="">Хатха йога для всех</a></li>
-        </ul>
-        <ul>
-          <li>
-            <a href="">
-              <svg>
-                <use></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg>
-                <use></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg>
-                <use></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <section class="links-section">
+        <div class="container">
+          <h2 class="visually-hidden">Список ссылок</h2>
+          <ul class="main-links-list">
+            <li class="main-links-item">
+              <a class="main-link" href="">Йога для беременных</a>
+            </li>
+            <li class="main-links-item">
+              <a class="main-link" href="">Хатха йога для всех</a>
+            </li>
+          </ul>
+          <ul class="social-links-list">
+            <li class="social-links-item">
+              <a class="social-link" href="">
+                <svg width="20" height="16">
+                  <use href="./img/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="">
+                <svg width="20" height="20">
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="">
+                <svg width="22" height="22">
+                  <use href="./img/sprite.svg#icon-spotify"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <h2>Локации для ваших занятий</h2>
-      <ul>
-        <li>
-          <p>Befit Eco</p>
-          <a href="">Посмотреть на карте</a>
-        </li>
-        <li>
-          <p>Федерация йоги</p>
-          <a href="">Посмотреть на карте</a>
-        </li>
-      </ul>
-      <p><span></span>, Yoga With Louisa Ershova.Все права защищены.</p>
+    <footer class="footer-section">
+      <div class="container">
+        <h2 class="footer-title">Локации для ваших занятий</h2>
+        <ul class="address-links-list">
+          <li class="address-list-items">
+            <p class="address-item-title">Befit Eco</p>
+            <a class="address-item-link" href="">Посмотреть на карте</a>
+          </li>
+          <li>
+            <p class="address-item-title">Федерация йоги</p>
+            <a class="address-item-link" href="">Посмотреть на карте</a>
+          </li>
+        </ul>
+        <p class="privacy-policy">
+          <span></span>, Yoga With Louisa Ershova. Все права защищены.
+        </p>
+      </div>
     </footer>
+    <script defer>
+      window.addEventListener("load", function () {
+        const currentYear = new Date().getFullYear();
+        document.querySelector(".privacy-policy span").textContent =
+          currentYear;
+      });
+    </script>
   </body>
 </html>
