@@ -1,9 +1,8 @@
 @font-face {
   font-family: "Nyght-Serif";
-  src: url("../fonts/fonts/OTF/NyghtSerif-Light.otf") format("otf"),
-    url("../fonts/fonts/TTF/NyghtSerif-Light.ttf") format("ttf"),
-    url("../fonts/fonts/WEB/NyghtSerif-Light.woff") format("woff"),
-    url("../fonts/fonts/WEB/NyghtSerif-Light.woff2") format("woff2");
+  src: url("../fonts/NyghtSerif-Light.woff2") format("woff2"),
+    url("../fonts/NyghtSerif-Light.woff") format("woff"),
+    url("../fonts/NyghtSerif-Light.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: normal;
@@ -121,7 +120,7 @@ body {
 
 .main-subtitle {
   display: block;
-  font-family: "Switzer", sans-serif;
+  font-family: "Switzer-Medium", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.1;
